@@ -64,12 +64,11 @@ h1, h2, h3, h4, h5 {
 }
 
 * {
-	/* border: 1px solid gray !important; */
+	border: 1px solid gray !important;
 }
 
 body {
 	padding: 50px;
-	font-family: "bellota text";
 	width: 880px;
 	margin: 0 auto;
 }
@@ -78,34 +77,40 @@ body {
 
 nav {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
+}
+
+nav .links {
+    width: 80%;
+    align-content: center;
 }
 
 header {
 	display: flex;
 	width: 100%;
-	justify-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 header div {
-		padding: 50px 0;
+	padding: 50px 0;
 }
 
 footer {
 	text-align: center;
 	padding: 50px 0 100px 0;
-	font-family: "bellota text";
 }
 
 /* classes */
 
 .top {
 	display: flex;
-	justify-content: space-around;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .top div {
-	width: 400px;
+    width: 400px;
 }
 
 .top-image {
@@ -161,7 +166,6 @@ footer {
 /* headers, button, links, hr */
 
 h1 {
-	font-family: "Playfair Display";
 	font-size: 70px;
 	text-align: center;
 }
@@ -175,7 +179,6 @@ h4 {
 }
 
 button {
-	font-family: "bellota text";
 	font-size: 15px;
 	border: 1px solid;
 	padding: 5px 45px;
@@ -191,4 +194,20 @@ hr {
 	border: 1px solid;
 	width: 90%;
 	margin: 25px 0;
+}
+
+/* media queries */
+
+@media (max-width: 800px) {
+    nav {
+
+    }
+
+}
+
+@media (max-width: 500px) {
+    body {
+
+    }
+
 }
