@@ -63,9 +63,9 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-* {
+/* * {
 	border: 1px solid gray !important;
-}
+} */
 
 body {
 	padding: 50px;
@@ -83,22 +83,26 @@ nav {
 nav .links {
     width: 80%;
     align-content: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav .logo {
+	padding-left: 20px;
 }
 
 header {
 	display: flex;
+	height: 60vh;
 	width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-header div {
-	padding: 50px 0;
+    justify-content: space-around;
+	align-items: center;
 }
 
 footer {
 	text-align: center;
-	padding: 50px 0 100px 0;
+	padding: 50px 0;
 }
 
 /* classes */
@@ -106,15 +110,11 @@ footer {
 .top {
 	display: flex;
     justify-content: space-between;
-    width: 100%;
+	width: 100%;
 }
 
 .top div {
-    width: 400px;
-}
-
-.top-image {
-	padding-left: 100px;
+    width: 49%;
 }
 
 .services-header-img {
@@ -129,7 +129,11 @@ footer {
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	padding: 25px;
+	padding: 25px 0;
+}
+
+.image img {
+	width: 100%;
 }
 
 .bottom {
@@ -157,10 +161,6 @@ footer {
 .service button {
 	border-radius: 5px;
 	margin-top: 20px;
-}
-
-.contact {
-	padding-left: 50px;
 }
 
 /* headers, button, links, hr */
@@ -192,8 +192,8 @@ a {
 
 hr {
 	border: 1px solid;
-	width: 90%;
-	margin: 25px 0;
+	width: 100%;
+	margin: 20px 0;
 }
 
 /* media queries */
